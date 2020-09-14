@@ -44,5 +44,22 @@ public class TestFixedPricePromotionStrategy {
 		boolean a=true;
 		assertTrue(a);
 	}
+	
+	
+	@Test
+	public void test_promotionforC() {
+		qps.apply(null);
+	}
+	
+	@Test
+	public void test_promotionforD() {
+		qps.apply(null);
+	}
+	
+	@Test
+	public void test_promotionforC_D() {
+		qps.apply(null);
+	}
+	
 
 }

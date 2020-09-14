@@ -43,9 +43,14 @@ public class TestQuantityPromotionStrategy {
 	}
 	
 	@Test
-	public void test() {
-		boolean a=true;
-		assertTrue(a);
+	public void test_promotionforA() {
+		qps.apply(null);
+	}
+	
+	
+	@Test
+	public void test_promotionforB() {
+		qps.apply(null);
 	}
 
 }
