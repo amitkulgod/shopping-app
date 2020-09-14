@@ -43,7 +43,7 @@ public class TestQuantityPromotionStrategy {
 	}
 	
 	@Test
-	public void test_promotionforA() {
+	public void test_promotionforA_() {
 		qps.apply(null);
 	}
 	
