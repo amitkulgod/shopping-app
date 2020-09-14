@@ -8,7 +8,7 @@ import java.util.Map;
 import com.shopping.app.product.catalogue.Product;
 
 /**
- * @author AKULGOD
+ * @author AK
  *
  */
 public interface Promotion {

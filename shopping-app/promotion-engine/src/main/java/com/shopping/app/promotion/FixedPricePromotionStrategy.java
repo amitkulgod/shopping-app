@@ -9,7 +9,7 @@ import com.shopping.app.product.catalogue.Product;
 
 /**
  * 
- * @author AKULGOD
+ * @author AK
  *
  */
 public class FixedPricePromotionStrategy implements Promotion {
