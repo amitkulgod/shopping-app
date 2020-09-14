@@ -58,11 +58,11 @@ public class Cart {
 	public void printCartItems() {
 	
 		if (!cartItems.isEmpty()) {
-			System.out.println("\n** CART ITEMS ** -" + calculateTotal());
+			System.out.println("\n** CART ITEMS ** " );
 			for (Entry<Product, Integer> entry : cartItems.entrySet()) {
-				System.out.println("Product : Quantity - " + entry.getKey() + ":" + entry.getValue());
+				System.out.println("Product Information : "+ entry.getKey() + " Quantity :" + entry.getValue());
 			}
-			System.out.println("\n TOTAL AMOUNT  -" + calculateTotal());
+			System.out.println("\n TOTAL AMOUNT  = " + calculateTotal());
 		} else {
 			System.out.println("\n Cart is empty !");
 		}

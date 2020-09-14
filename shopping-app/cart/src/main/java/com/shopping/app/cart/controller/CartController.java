@@ -121,7 +121,7 @@ public class CartController {
 	
 		
 		int afterDiscount=cart.applyPromotion(new QuantityPromotionStrategy())+cart.applyPromotion(new FixedPricePromotionStrategy());
-		System.out.println("TOTAL AMOUNT PAYABLE - " + afterDiscount );
+		System.out.println("TOTAL AMOUNT PAYABLE = " + afterDiscount );
 		
 
 	}
