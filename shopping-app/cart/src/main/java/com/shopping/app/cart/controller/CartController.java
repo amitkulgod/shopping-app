@@ -13,7 +13,7 @@ import com.shopping.app.promotion.FixedPricePromotionStrategy;
 import com.shopping.app.promotion.QuantityPromotionStrategy;
 
 /**
- * @author AKULGOD
+ * @author AK
  *
  */
 public class CartController {
@@ -30,7 +30,6 @@ public class CartController {
 		System.out.println("\n ** Shopping Application  **");
 		System.out.println("\n Please select the options below to proceed further");
 		System.out.println("1. Display All Products");
-		System.out.println("2. Display Cart");
 		System.out.println("0. Exit\n");
 	}
 
@@ -51,9 +50,6 @@ public class CartController {
 			cartMenu();
 			getUserInput();
 			mainChoice1();
-			break;
-		case 2:
-			showCart();
 			break;
 		case 0:
 			System.exit(0);
@@ -117,8 +113,15 @@ public class CartController {
 
 	private void showCart() {
 		cart.printCartItems();
+		
+		System.out.println("\n ** ACTIVE PROMOTIONS ** ");
+		System.out.println("Buy 3 Product A for 130");
+		System.out.println("Buy 2 Product B for 45");
+		System.out.println("Buy Product C & D 30\n");
+	
+		
 		int afterDiscount=cart.applyPromotion(new QuantityPromotionStrategy())+cart.applyPromotion(new FixedPricePromotionStrategy());
-		System.out.println("Total Amount after applying promotions  is -" + afterDiscount );
+		System.out.println("TOTAL AMOUNT PAYABLE - " + afterDiscount );
 		
 
 	}

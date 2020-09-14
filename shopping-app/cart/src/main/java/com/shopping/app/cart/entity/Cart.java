@@ -58,10 +58,11 @@ public class Cart {
 	public void printCartItems() {
 	
 		if (!cartItems.isEmpty()) {
+			System.out.println("\n** CART ITEMS ** -" + calculateTotal());
 			for (Entry<Product, Integer> entry : cartItems.entrySet()) {
-				System.out.println("Product : Qty - " + entry.getKey() + ":" + entry.getValue());
+				System.out.println("Product : Quantity - " + entry.getKey() + ":" + entry.getValue());
 			}
-			System.out.println("Total Amount is -" + calculateTotal());
+			System.out.println("\n TOTAL AMOUNT  -" + calculateTotal());
 		} else {
 			System.out.println("\n Cart is empty !");
 		}
@@ -78,14 +79,10 @@ public class Cart {
 	}
 	
 	
-	public Integer applyPromotion(Promotion promotion){
-		System.out.println("\n ** Active promtions ** ");
-		System.out.println("\n Buy 3 Product A for 130");
-		System.out.println("\n Buy 2 Product B for 45");
-		System.out.println("\n Buy Product C & D 30");
-		
-		return promotion.apply(cartItems);
-	}
+	public Integer applyPromotion(Promotion promotion) {
+			return promotion.apply(cartItems);
+
+		}
 	
 	
 	
